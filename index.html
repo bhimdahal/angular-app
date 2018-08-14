@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hello world!</title>
+	<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="node_modules/angular-animate/angular-animate.js"></script>
+	<script type="text/javascript" src="node_modules/angular-sanitize/angular-sanitize.js"></script>
+	<script type="text/javascript" src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+	<script type="text/javascript" src="node_modules/ngstorage/ngStorage.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+	<link rel='stylesheet' href='node_modules/angular-loading-bar/build/loading-bar.min.css' type='text/css' media='all' />
+	<script type='text/javascript' src='node_modules/angular-loading-bar/build/loading-bar.min.js'></script>
+	<link rel="stylesheet" href="content/css/main.css">
+	<link rel="icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.webapp" />
+
+
+
+</head>
+<body>
+<header-template ng-cloak></header-template>
+<div id="loading-bar-container"></div>
+<div class="container" ui-view></div>
+ <noscript>
+        <h1>You must enable javascript to view this page.</h1>
+  </noscript>
+<script type="text/javascript" src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<script type="text/javascript" src="node_modules/angular-resource/angular-resource.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="app/common/common.module.js"></script>
+<script type="text/javascript" src="app/common/component/login/loginController.js"></script>
+<script type="text/javascript" src="app/common/component/header/header.template.js"></script>
+<script type="text/javascript" src="app/common/component/filters/filter.js"></script>
+<script type="text/javascript" src="app/common/component/filters/filter.template.js"></script>
+<script type="text/javascript" src="app/common/component/home/home.component.js"></script>
+<script type="text/javascript" src="app/common/component/about/about.component.js"></script>
+<script type="text/javascript" src="app/common/component/gallery/gallery.component.js"></script>
+<script type="text/javascript" src="app/common/component/contact/contact.component.js"></script>
+<script type="text/javascript" src="app/common/component/contact/contact.phone.component.js"></script>
+<script type="text/javascript" src="app/common/component/contact/contact.email.component.js"></script>
+<script type="text/javascript" src="app/util/TokenCreator.js"></script>
+<script type="text/javascript" src="app/common/service/repo.service.js"></script>
+<script type="text/javascript" src="app/interceptors/http.interceptor.js"></script>
+<script type="text/javascript" src="app/config/httpConfig.js"></script>
+<script type="text/javascript" src="app/common/controller/git-controller.js"></script>
+<!-- <script type="text/javascript" src="app/common/component/login.component/login.component.js"></script> -->
+<script type="text/javascript" src="app/common/component/login/login.service.js"></script>
+<script type="text/javascript" src="app/common/service/AuthorizationService.js"></script>
+<script type="text/javascript" src="app/common/service/PrincipalService.js"></script>
+
+<script type="text/javascript" src="app/common/component/profile/profile.component.js"></script>
+<script type="text/javascript" src="app/common/component/error/unauthorize.js"></script>
+<script type="text/javascript" src="app/common/component/authority/hasAuthority.js"></script>
+<script type="text/javascript" src="app/config/localstorage.config.js"></script>
+<script type="text/javascript" src="app/config/urlRouterConfig.js"></script>
+<script type="text/javascript" src="app/config/loadingBarConfig.js"></script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Bhim Dahal</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li ng-class="{active: vm.$state.includes('home')}"><a ui-sref-active="active" ui-sref="home">Home</a></li>
+            <li ng-class="{active: vm.$state.includes('gallery')}" ><a ui-sref-active="active" ui-sref="gallery">Gallery</a></li>
+            <li ng-class="{active: vm.$state.includes('about')}" ><a ui-sref-active="active" ui-sref="about">About Us</a></li>
+            <li ng-class="{active: vm.$state.includes('contact')}" ><a ui-sref-active="active" ui-sref="contact">Contact</a></li>
+            <li ng-class="{active: vm.$state.includes('profile')}" ><a ui-sref-active="active" ui-sref="profile" ng-show="vm.isAuthenticated">Profile</a></li>
+
+<!--             <li><a ui-sref-active="active" ui-sref="lottery">Lottery Checker</a></li>
+ -->
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="" ng-hide="vm.isAuthenticated" ng-click="vm.login()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="" ng-hide="!vm.isAuthenticated" ng-click="vm.logout($event)"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+    </div>
+</nav>
