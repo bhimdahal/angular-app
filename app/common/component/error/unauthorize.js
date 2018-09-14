@@ -1,11 +1,11 @@
-var unauhtorizeTemplate = {
-    templateUrl: 'app/common/component/error/unauhtorize.html',
-    controller: UnAuhtorizeController,
+var unauthorizeTemplate = {
+    templateUrl: 'app/common/component/error/unauthorize.html',
+    controller: UnAuthorizeController,
     controllerAs: 'vm'
         
 };
 
-function UnAuhtorizeController(LoginService,$state,Principal,$scope) {
+function UnAuthorizeController(LoginService,$state,Principal,$scope) {
     console.log("initializing app controller");
     var vm = this;
     vm.login = LoginService.open;  
@@ -21,12 +21,12 @@ function UnAuhtorizeController(LoginService,$state,Principal,$scope) {
 };
 
 angular.module('common')
-    .component('unauhtorizeTemplate', unauhtorizeTemplate)
+    .component('unauthorizeTemplate', unauthorizeTemplate)
     .config(function($stateProvider) {
         $stateProvider
-            .state('unauhtorize', {
-                url: '/unauhtorize',
-                component: 'unauhtorizeTemplate'
+            .state('unauthorize', {
+                url: '/unauthorize',
+                component: 'unauthorizeTemplate'
 
             });
     });
